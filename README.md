@@ -16,7 +16,28 @@ The simulation generates an MP4 animation of the spin configurations by streamin
 ```bash
 gcc -O3 -std=gnu11 ising2d.c -o ising -lm
 ```
+## Running with Docker
 
+Alternatively, the simulation can be compiled and executed inside a Docker container without installing GCC or FFmpeg on the host system.
+
+### Build the Docker image
+
+```bash
+docker build -t ising2d .
+```
+
+### Run the simulation
+
+```bash
+docker run --rm \
+    -v "$PWD":/app/output \
+    -v "$PWD/input":/app/input:ro \
+    ising2d
+```
+
+The simulation reads parameters from the local `input` file and saves the generated `ising_movie.mp4` in the local repository directory.
+
+Simulation parameters can be modified without rebuilding the Docker image. Changes to the C source code require rebuilding the image.
 ## Input parameters
 
 Simulation parameters are read from a file named `input`, located in the working directory.
