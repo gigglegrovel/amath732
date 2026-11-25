@@ -102,6 +102,7 @@ Configurations are streamed directly to FFmpeg, eliminating the need to store ra
 
 ```text
 .
+├── Dockerfile
 ├── ising2d.c
 ├── input
 └── README.md
