@@ -1,0 +1,6 @@
+equilibration_sweeps 100
+simulation_sweeps 5000
+sampling_freq 1
+J 1.0
+h 0.0
+T 0.0269
