@@ -1,4 +1,6 @@
 # amath732
+#Note
+If you can run the compiled version there is no need to recompile unless you made changes to the code
 # 2D Ising Model – Monte Carlo Simulation
 
 A C implementation of the two-dimensional Ising model using the Metropolis Monte Carlo algorithm with periodic boundary conditions.
