@@ -18,6 +18,10 @@ The simulation generates an MP4 animation of the spin configurations by streamin
 ```bash
 gcc -O3 -std=gnu11 ising2d.c -o ising -lm
 ```
+then run
+```bash
+./ising
+```
 ## Running with Docker
 
 Alternatively, the simulation can be compiled and executed inside a Docker container without installing GCC or FFmpeg on the host system.
